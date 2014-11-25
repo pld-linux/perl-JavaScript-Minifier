@@ -1,7 +1,7 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
+
 %define		pdir	JavaScript
 %define		pnam	Minifier
 %include	/usr/lib/rpm/macros.perl
@@ -14,12 +14,9 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/JavaScript/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	63f58ce5929780e3bd5273eeadd56b25
-# generic URL, check or change before uncommenting
-#URL:		http://search.cpan.org/dist/JavaScript-Minifier/
+URL:		http://search.cpan.org/dist/JavaScript-Minifier/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-%if %{with tests}
-%endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -55,7 +52,6 @@ files on-the-fly repeatedly is wasteful.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 %{__make} pure_install \
 	DESTDIR=$RPM_BUILD_ROOT
 
