@@ -7,13 +7,13 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	JavaScript::Minifier - Perl extension for minifying JavaScript code
 Name:		perl-JavaScript-Minifier
-Version:	1.09
+Version:	1.12
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/JavaScript/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	63f58ce5929780e3bd5273eeadd56b25
+# Source0-md5:	07dadb99434c749eb8960d075244aea3
 URL:		http://search.cpan.org/dist/JavaScript-Minifier/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
