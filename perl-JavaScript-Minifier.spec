@@ -4,7 +4,6 @@
 
 %define		pdir	JavaScript
 %define		pnam	Minifier
-%include	/usr/lib/rpm/macros.perl
 Summary:	JavaScript::Minifier - Perl extension for minifying JavaScript code
 Name:		perl-JavaScript-Minifier
 Version:	1.14
