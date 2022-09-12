@@ -6,13 +6,13 @@
 %define		pnam	Minifier
 Summary:	JavaScript::Minifier - Perl extension for minifying JavaScript code
 Name:		perl-JavaScript-Minifier
-Version:	1.14
+Version:	1.16
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/JavaScript/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	91e4cf0a4f5e317d5a5a8cf6d55700ac
+# Source0-md5:	f14647b5f3e8d4f152816b8260b8ea67
 URL:		http://search.cpan.org/dist/JavaScript-Minifier/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
